@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="IP">http://18.190.33.132:8081/user</string>
+</resources>
