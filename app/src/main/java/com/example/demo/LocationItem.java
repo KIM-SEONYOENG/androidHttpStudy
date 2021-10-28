@@ -2,8 +2,8 @@ package com.example.demo;
 
 public class LocationItem {
     private long _lid;
-    private float lan;
-    private float lat;
+    private double lan;
+    private double lat;
     private String address;
     private String dt;
     private int num;
@@ -17,19 +17,19 @@ public class LocationItem {
         this._lid = _lid;
     }
 
-    public float getLan() {
+    public double getLan() {
         return lan;
     }
 
-    public void setLan(float lan) {
+    public void setLan(double lan) {
         this.lan = lan;
     }
 
-    public float getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public void setLat(float lat) {
+    public void setLat(double lat) {
         this.lat = lat;
     }
 
