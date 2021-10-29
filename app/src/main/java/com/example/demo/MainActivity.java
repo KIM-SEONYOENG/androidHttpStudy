@@ -33,24 +33,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.btnPost:
-                setData();
+                PostDialog postDialog = new PostDialog(MainActivity.this);
+                postDialog.setCancelable(false);
+                postDialog.show();
 
         }
     }
 
-    private void setData() {
-        View dialogView = getLayoutInflater().inflate(R.layout.layout_input, null);
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setView(dialogView);
-        LocationItem locItem = new LocationItem();
-
-        builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        builder.show();
+    private void post() {
 
     }
 

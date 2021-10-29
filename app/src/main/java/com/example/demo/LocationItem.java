@@ -9,6 +9,17 @@ public class LocationItem {
     private int num;
     private int _uid;
 
+    public LocationItem() {}
+
+    public LocationItem(double lan, double lat, String address, String dt, int num, int _uid) {
+        this.lan = lan;
+        this.lat = lat;
+        this.address = address;
+        this.dt = dt;
+        this.num = num;
+        this._uid = _uid;
+    }
+
     public long get_lid() {
         return _lid;
     }
